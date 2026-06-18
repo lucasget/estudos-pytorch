@@ -13,7 +13,9 @@ dependencies = [
     "matplotlib (>=3.10.9,<4.0.0)",
     "scikit-learn (>=1.9.0,<2.0.0)",
     "requests (>=2.34.2,<3.0.0)",
-    "torchvision (>=0.27.0,<0.28.0)"
+    "torchvision (>=0.27.0,<0.28.0)",
+    "pytorchmetrics (>=0.0.1,<0.0.2)",
+    "torchmetrics (>=1.9.0,<2.0.0)"
 ]
 
 [tool.poetry]
