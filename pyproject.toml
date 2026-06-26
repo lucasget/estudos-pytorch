@@ -1,32 +1,26 @@
-[project]
+[tool.poetry]
 name = "pytorch"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "lucasget", email = "lucasbalves2004@gmail.com"}
-]
-readme = "README.md"
-requires-python = ">=3.12, <3.14 || >3.14.1, <3.15"
-dependencies = [
-    "torch (>=2.12.0,<3.0.0)",
-    "pandas (>=3.0.3,<4.0.0)",
-    "matplotlib (>=3.10.9,<4.0.0)",
-    "scikit-learn (>=1.9.0,<2.0.0)",
-    "requests (>=2.34.2,<3.0.0)",
-    "torchvision (>=0.27.0,<0.28.0)",
-    "pytorchmetrics (>=0.0.1,<0.0.2)",
-    "torchmetrics (>=1.9.0,<2.0.0)",
-    "tqdm (>=4.68.3,<5.0.0)"
-]
+description = "Estudos de PyTorch"
+authors = ["lucasget <lucasbalves2004@gmail.com>"]
+package-mode = false
 
-[tool.poetry]
-package-mode = false 
+[tool.poetry.dependencies]
+# ALTERE ESSA LINHA ABAIXO PARA EXCLUIR O 3.14.1:
+python = ">=3.12,<3.14.1 || >3.14.1,<3.15"
+torch = "^2.12.0"
+pandas = "^3.0.3"
+matplotlib = "^3.10.9"
+scikit-learn = "^1.9.0"
+requests = "^2.34.2"
+torchvision = "^0.27.0"
+pytorchmetrics = "^0.0.1"
+torchmetrics = "^1.9.0"
+tqdm = "^4.68.3"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^7.2.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "ipykernel (>=7.2.0,<8.0.0)"
-]
