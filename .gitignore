@@ -1,0 +1,4 @@
+# Ignorar modelos do PyTorch e datasets pesados
+models/*.pth
+models/*.pt
+data/
