@@ -65,4 +65,4 @@ demo = gr.Interface(fn = predict, # mapeia entradas para saidas
 
 # Lançar o demo
 demo.launch(debug = False, # imprimir erros localmente? 
-            share = True) # Gerar um URL compartilhável?
+            share = True) # Gerar um URL compartilhável
